@@ -1,0 +1,100 @@
+/* Estilos personalizados */
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/AzureoN.ttf);
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+}
+header a img{
+    width: 400px;
+}
+
+
+a img{
+    width: 35px;
+}
+
+body {
+background-image: url(../img/cuadrado.jpeg);
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+color: #FFFFFF;
+}
+
+.links {
+
+    font-family: myFont;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+
+/* Estilos para los botones de los enlaces */
+
+
+.links .btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s;
+    width: 100%; /* Ancho igual para todos los botones en dispositivos móviles */
+    max-width: 300px; /* Ancho máximo para dispositivos más grandes */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    display: flex;
+    justify-content: space-between; /* Alinea la imagen y el texto a la izquierda y derecha */
+    align-items: center; /* Centra verticalmente el contenido del botón */
+    padding: 10px; /* Añade espacio interno al botón para mejor apariencia */
+     /* Otros estilos existentes */
+     margin-bottom: 10px; /* Agrega un margen inferior de 10px entre los botones */
+}
+
+/* Ajusta el tamaño de la imagen dentro del botón */
+.links .btn img {
+    width: px;
+}
+
+/* Efecto de inversión al pasar el cursor sobre los botones */
+.links .btn:hover {
+    background-color: white; /* Relleno blanco al pasar el cursor */
+    color: black; /* Texto negro al pasar el cursor */
+}
+
+.share {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Añade espacio superior al footer para mejor apariencia */
+}
+
+.share a {
+    display: inline-block; /* Permite centrar el botón horizontalmente */
+    filter:invert(100%);
+}
+
+.share a :hover{
+    filter:invert(50%);
+}
+
+.modal {
+    color: black;
+    text-align: center;
+    font-family: myFont;
+    font-size: larger;
+}
+.modal img{
+    width: 100px;
+}
+.modal-footer button{ 
+    align-items: center;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    header a img{
+        width: 200px;
+    }
+}
